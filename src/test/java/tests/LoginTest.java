@@ -1,21 +1,12 @@
 package tests;
 
-import Utils.Waits;
 import base.BaseTest;
-import com.microsoft.playwright.Locator;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.AriaRole;
-import com.microsoft.playwright.options.LoadState;
+
 import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.LoginPage;
-import Utils.ConfigReader;
-
-import java.util.regex.Pattern;
-
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class LoginTest extends BaseTest {
     @Epic("Login Module")
@@ -58,7 +49,7 @@ public class LoginTest extends BaseTest {
              case "invalidPass":
                  loginPage.isErrorMessageVisible();
                  String actualMessage1= loginPage.isErrorMessageVisible();
-                 Assert.assertEquals(actualMessage1, "User permissions not loaded..");
+                 Assert.assertEquals(actualMessage1, "User permissions not loaded.");
 
                  break;
              default:
