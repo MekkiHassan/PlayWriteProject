@@ -55,8 +55,7 @@ public class BaseTest {
 
     // الميثود دي هي اللي بتخلي الصورة تظهر في المتصفح جوه Allure
     @Attachment(value = "Failure Screenshot", type = "image/png")
-    public byte[] saveScreenshotToAllure(byte[] screenshot) {
-        return screenshot;
+    public void saveScreenshotToAllure(byte[] screenshot) {
     }
 
     @AfterClass(alwaysRun = true)

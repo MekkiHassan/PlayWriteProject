@@ -53,7 +53,7 @@ public class LoginTest extends BaseTest {
                  break;
              case "invalidFields":
                 String actualMessage= loginPage.isErrorMessageVisible();
-                    Assert.assertEquals(actualMessage, "User permissions not loaded..");
+                    Assert.assertEquals(actualMessage, "User permissions not loaded.");
                  break;
              case "invalidPass":
                  loginPage.isErrorMessageVisible();
