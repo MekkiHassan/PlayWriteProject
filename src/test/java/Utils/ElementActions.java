@@ -2,8 +2,7 @@ package Utils;
 
 import base.BaseTest;
 import com.microsoft.playwright.Locator;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Selectors;
+
 
 public class ElementActions {
 

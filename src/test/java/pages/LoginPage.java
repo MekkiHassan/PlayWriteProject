@@ -36,10 +36,6 @@ public class LoginPage {
 
  //Actions
 
-  /*  public LoginPage clickStart(){
-        ElementActions.CLICK(startBtn);
-        return this;
-    }*/
   @Step("Enter Username: {0}")
      public  LoginPage enterUsername(String username){
 
@@ -55,7 +51,6 @@ public class LoginPage {
     public LoginPage selectLicense(){
         ElementActions.CLICK(dropDownList);
         ElementActions.CLICK(validLicense);
-
         return this;
     }
     @Step("Click on Login Button")

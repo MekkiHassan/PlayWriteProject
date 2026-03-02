@@ -3,9 +3,10 @@
 
 <suite name="Playwright Test Suite" verbose="1" parallel="false">
 
-    <test name="Login Tests">
+    <test name="Regression Tests">
         <classes>
             <class name="tests.LoginTest"></class>
+            <class name="tests.SettingsTest"></class>
 
         </classes>
     </test>
